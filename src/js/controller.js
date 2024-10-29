@@ -4,7 +4,7 @@ let galaxy = document.querySelector(".galaxy");
 var width = galaxy.offsetWidth;
 var height = galaxy.offsetHeight;
 
-n = 20;
+let n = 20;
 let speedFactor = 1; // Zmienna wpływająca na prędkość
 let isAnimating = true; // Flaga kontrolująca animację
 spacePosition();
