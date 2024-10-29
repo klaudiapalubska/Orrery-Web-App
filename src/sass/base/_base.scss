@@ -20,7 +20,5 @@ body {
   user-select: none;
   background-image: url("../img/stars_background.jpg");
   cursor: grab;
-  @include responsive($breakpoint-2) {
-    overflow-x: hidden;
-  }
+
 }
