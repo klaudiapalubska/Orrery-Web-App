@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Orrery Web App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=-1" />
+    <link rel="icon" href="src/img/sun.svg" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="src/sass/main.scss"
+    />
+  </head>
+  <body>
+    <main class="galaxy">
+      <div class="galaxy__circles">
+        <div class="galaxy__circles__mercury"></div>
+        <div class="galaxy__circles__venus"></div>
+        <div class="galaxy__circles__earth"></div>
+        <div class="galaxy__circles__mars"></div>
+        <div class="galaxy__circles__saturn"></div>
+        <div class="galaxy__circles__jupiter"></div>
+        <div class="galaxy__circles__uranus"></div>
+        <div class="galaxy__circles__neptune"></div>
+      </div>
+
+      <div class="galaxy__planets">
+        <div class="galaxy__sun"></div>
+        <div class="galaxy__container__mercury">
+          <div class="galaxy__texture__mercury"></div>
+          <div class="galaxy__shadow__mercury">
+            <div class="galaxy__shadow__mercury--light"></div>
+            <div class="galaxy__shadow__mercury--shadow"></div>
+          </div>
+        </div>
+
+        <div class="galaxy__container__venus galaxy__planet">
+          <div class="galaxy__texture__venus"></div>
+          <div class="galaxy__shadow__venus">
+            <div class="galaxy__shadow__venus--light"></div>
+            <div class="galaxy__shadow__venus--shadow"></div>
+          </div>
+        </div>
+
+        <div class="galaxy__container__earth__moon galaxy__planet">
+          <div class="galaxy__container__earth">
+            <div class="galaxy__texture__earth">
+              <img
+                class="galaxy__texture__earth--img"
+                src="https://res.cloudinary.com/yerevan/image/upload/v1484080036/earth_saibbo.gif"
+              />
+            </div>
+            <div class="galaxy__shadow__earth">
+              <div class="galaxy__shadow__earth--light"></div>
+              <div class="galaxy__shadow__earth--shadow"></div>
+            </div>
+          </div>
+
+          <div class="galaxy__container__moon">
+            <div class="galaxy__texture__moon">
+              <img
+                class="galaxy__texture__moon--img"
+                src="https://res.cloudinary.com/yerevan/image/upload/v1484080036/moon_nqqsgu.gif"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="galaxy__container__mars galaxy__planet">
+          <div class="galaxy__texture__mars"></div>
+          <div class="galaxy__shadow__mars">
+            <div class="galaxy__shadow__mars--light"></div>
+            <div class="galaxy__shadow__mars--shadow"></div>
+          </div>
+        </div>
+
+        <div class="galaxy__container__jupiter galaxy__planet">
+          <div class="galaxy__texture__jupiter">
+            <img
+              class="galaxy__texture__jupiter--img"
+              src="https://res.cloudinary.com/yerevan/image/upload/v1484080036/jupiter_cxhuh5.gif"
+            />
+          </div>
+          <div class="galaxy__shadow__jupiter">
+            <div class="galaxy__shadow__jupiter--light"></div>
+            <div class="galaxy__shadow__jupiter--shadow"></div>
+          </div>
+        </div>
+
+        <div class="galaxy__container__saturn__ring galaxy__planet">
+          <div class="galaxy__container__saturn">
+            <div class="galaxy__texture__saturn">
+              <img
+                class="galaxy__texture__saturn--img"
+                src="https://res.cloudinary.com/yerevan/image/upload/v1484080036/jupiter_cxhuh5.gif"
+              />
+            </div>
+            <div class="galaxy__shadow__saturn">
+              <div class="galaxy__shadow__saturn--light"></div>
+              <div class="galaxy__shadow__saturn--shadow"></div>
+            </div>
+          </div>
+
+          <div class="galaxy__container__ring">
+            <div class="galaxy__texture__ring">
+              <div class="galaxy__texture__ring--img-1">
+                <img
+                  src="https://res.cloudinary.com/yerevan/image/upload/v1484080037/ring_zofwhd.png"
+                />
+              </div>
+
+              <div class="galaxy__texture__ring--img-2">
+                <img
+                  src="https://res.cloudinary.com/yerevan/image/upload/v1484080037/ring_zofwhd.png"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="galaxy__container__uranus galaxy__planet">
+          <div class="galaxy__texture__uranus"></div>
+          <div class="galaxy__shadow__uranus">
+            <div class="galaxy__shadow__uranus--light"></div>
+            <div class="galaxy__shadow__uranus--shadow"></div>
+          </div>
+        </div>
+
+        <div class="galaxy__container__neptune">
+          <div class="galaxy__texture__neptune"></div>
+          <div class="galaxy__shadow__neptune">
+            <div class="galaxy__shadow__neptune--light"></div>
+            <div class="galaxy__shadow__neptune--shadow"></div>
+          </div>
+        </div>
+      </div>
+      <div class="controls">
+        <div class="slider">
+          <p class="paragraph paragraph--1">Solar system speed:</p>
+          <input
+            class="slider__input"
+            type="range"
+            min="1"
+            max="20"
+            value="1"
+          />
+        </div>
+
+        <div class="button__container">
+          <button class="button__stop">
+            <p class="paragraph paragraph--2">On/Off</p>
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <div class="planet__icons">
+      <button class="planet__box planet__icons__mercury">
+        <img
+          class="planet__icons__icon"
+          src="src/img/mercury.png"
+          alt="Mercury button"
+        />
+      </button>
+      <button class="planet__box planet__icons__venus">
+        <img
+          class="planet__icons__icon"
+          src="src/img/venus.png"
+          alt="Venus button"
+        />
+      </button>
+      <button class="planet__box planet__icons__earth">
+        <img
+          class="planet__icons__icon"
+          src="src/img/earth.png"
+          alt="Earth button"
+        />
+      </button>
+
+      <button class="planet__box planet__icons__mars">
+        <img
+          class="planet__icons__icon"
+          src="src/img/mars.png"
+          alt="Mars button"
+        />
+      </button>
+      <button class="planet__box planet__icons__jupiter">
+        <img
+          class="planet__icons__icon"
+          src="src/img/jupiter.png"
+          alt="Jupiter button"
+        />
+      </button>
+      <button class="planet__box planet__icons__saturn">
+        <img
+          class="planet__icons__icon"
+          src="src/img/saturn.png"
+          alt="Saturn button"
+        />
+      </button>
+
+      <button class="planet__box planet__icons__uranus">
+        <img
+          class="planet__icons__icon"
+          src="src/img/uranus.png"
+          alt="Uranus button"
+        />
+      </button>
+      <button class="planet__box planet__icons__neptune">
+        <img
+          class="planet__icons__icon"
+          src="src/img/neptune.png"
+          alt="Neptune button"
+        />
+      </button>
+    </div>
+
+    <div class="planet__info">
+      <button class="button__close">
+        <img class="button__close__icon" src="src/img/close.svg" alt="x" />
+      </button>
+
+      <div class="planet__info__box">
+        <div class="planet__info__language">
+          <button class="button__language button__polish">
+            <img
+              class="button__language__icon"
+              src="src/img/polish.png"
+              alt="polish"
+            />
+          </button>
+
+          <button class="button__language button__english">
+            <img
+              class="button__language__icon"
+              src="src/img/english.png"
+              alt="english"
+            />
+          </button>
+        </div>
+        <div class="planet__info__data">
+          <div class="planet__info__describe">
+            <span class="planet__info__title">
+              <p class="paragraph paragraph--3">Mercury</p>
+              <hr />
+            </span>
+            <span class="planet__info__part">
+              <p class="paragraph paragraph--4">
+                Mercury's surface temperatures are extremely hot and cold at the
+                same time. Because the planet is so close to the Sun, day
+                temperatures can reach 430°C but at night, temperatures can go
+                as low as -180°C due to lack of atmosphere.Despite its proximity
+                to the Sun, Mercury is not the hottest planet in our solar
+                system.
+              </p>
+            </span>
+            <span class="planet__info__part-2">
+              <p class="paragraph paragraph--4">
+                But Mercury is the winner in different competitions, it's the
+                fastest planet, zipping around the Sun every 88 Earth days, at
+                almost 47 kilometers per second. Maybe it doesn't have its own
+                satellite but Mercury's surface resembles that of Earth's Moon.
+              </p>
+            </span>
+          </div>
+
+          <div class="planet__info__photo">
+            <img
+              class="planet__info__photo-1"
+              src="src/img/mercury-info.jpg"
+              alt="mercury photo"
+            />
+            <div class="planet__info__distance">
+              <p
+                class="planet__info__distance__p paragraph paragraph--1--black"
+              >
+                57,91 mln km
+              </p>
+              <img
+                class="planet__info__photo-2"
+                src="src/img/distance.png"
+                alt="distance"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+    <script defer type="module" src="src/js/controller.js"></script>
+  </body>
+</html>

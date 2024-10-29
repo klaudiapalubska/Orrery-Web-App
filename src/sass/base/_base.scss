@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+  @include responsive($breakpoint-2) {
+    font-size: 15px;
+  }
+}
+
+body {
+  position: relative;
+  user-select: none;
+  background-image: url("../img/stars_background.jpg");
+  cursor: grab;
+  @include responsive($breakpoint-2) {
+    overflow-x: hidden;
+  }
+}

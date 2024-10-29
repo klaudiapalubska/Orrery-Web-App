@@ -1,0 +1,89 @@
+.button {
+  &__container {
+  }
+  &__stop {
+    margin-right: 1rem;
+    background-color: $color-primary;
+    width: 10rem;
+    height: 3rem;
+    border-radius: 8%;
+    text-align: center;
+    padding-bottom: 0.2rem;
+    transition: filter 0.3s ease;
+    @include responsive($breakpoint-2) {
+      margin-right: 4rem;
+    }
+    &:active {
+      transform: scale(1.1);
+    }
+    &:hover {
+      filter: brightness(0.9);
+      cursor: pointer;
+    }
+  }
+
+  &__close {
+    background: none;
+    border: none;
+    cursor: pointer;
+    &__icon {
+      width: 3rem;
+      height: 3rem;
+    }
+    &:hover {
+      filter: brightness(0.9);
+      cursor: pointer;
+    }
+  }
+
+  &__language {
+    all: unset;
+
+    &__icon {
+      width: 4rem;
+      height: 3.5rem;
+    }
+    &:active {
+      transform: scale(1.05);
+    }
+    &:hover {
+      filter: brightness(0.9);
+      cursor: pointer;
+    }
+  }
+}
+
+.planet {
+  &__icons {
+    display: flex;
+    justify-content: center;
+    @include responsive($breakpoint-1) {
+      width: min-content;
+    }
+
+    &__icon {
+      width: 6.25rem;
+    }
+  }
+  &__box {
+    background-color: transparent;
+    border: none;
+    width: 8.125rem;
+    height: 8.125rem;
+    margin: 1rem 1.5rem;
+    @include responsive($breakpoint-2) {
+      margin: 1rem 1.2rem;
+    }
+    margin-top: -5rem;
+    z-index: 25;
+    transition: filter 0.3s ease;
+
+    &:active {
+      transform: scale(1.1);
+    }
+    &:hover {
+      filter: brightness(0.5);
+      cursor: pointer;
+    }
+  }
+}

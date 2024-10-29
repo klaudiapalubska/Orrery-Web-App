@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Lilita+One&display=swap");
+
+.paragraph {
+  color: $color-font-primary;
+  font-family: $font-family-1;
+  font-weight: $font-weight-1;
+  &--1 {
+    font-size: 2rem;
+    &--black {
+      color: $color-neutral-black;
+    }
+  }
+  &--2 {
+    font-size: 1.5rem;
+  }
+  &--3 {
+    color: $color-neutral-black;
+    font-size: 3rem;
+  }
+  &--4 {
+    color: $color-neutral-black;
+  }
+}

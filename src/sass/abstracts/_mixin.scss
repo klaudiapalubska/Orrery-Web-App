@@ -1,0 +1,26 @@
+//Settings for the light and shadow of the planet
+@mixin shadowLightPlanet($x) {
+  content: "";
+  display: block;
+  width: $x;
+  height: $x;
+  border-radius: 50%;
+}
+
+@mixin sizePosition($x, $position: static) {
+  height: $x;
+  width: $x;
+  position: $position;
+}
+
+@mixin backgroundPositionSize($x, $y, $size) {
+  background-position-x: $x;
+  background-position-y: $y;
+  background-size: $size;
+}
+
+@mixin responsive($breakpoints) {
+  @media only screen and (max-width: $breakpoints) {
+    @content;
+  }
+}

@@ -1,0 +1,26 @@
+.slider {
+  &__input {
+    margin-left: 1rem;
+    margin-top: 1rem;
+    appearance: none;
+    width: 17rem;
+    height: 1.5rem;
+    background: $color-primary;
+    border-radius: 2rem;
+    outline: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    &::-webkit-slider-thumb {
+      appearance: none;
+      width: 2rem;
+      height: 1.5rem;
+      background: $color-primary-light;
+      border-radius: 30%;
+      cursor: pointer;
+    }
+  }
+  & > p {
+    margin-left: 1rem;
+  }
+}

@@ -1,0 +1,77 @@
+.planet__info {
+  display: none;
+  color: $color-neutral-black;
+  max-width: 1200px;
+  min-width: 300px;
+  width: 45vw;
+  height: 700px;
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  border-radius: 5%;
+  opacity: 0;
+  z-index: 100;
+  background-color: $color-font-primary;
+  padding: 2rem;
+  text-align: right;
+  animation: grow 1s ease forwards;
+  animation-delay: 1.75s;
+  &__language {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: -3.5rem;
+  }
+  &__data {
+    display: flex;
+  }
+  &__describe {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+  }
+  &__title {
+    width: 20%;
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    > hr {
+      width: 11rem;
+    }
+  }
+  &__part {
+    margin: 3rem 0;
+    margin-left: 1rem;
+    text-align: justify;
+    text-align-last: left;
+    &-2 {
+      text-align: justify;
+      text-align-last: left;
+      margin-left: 1rem;
+    }
+  }
+  &__photo {
+    width: 50%;
+    &-1 {
+      width: 450px;
+      margin-top: 5rem;
+      margin-right: 1rem;
+      border-radius: 1rem;
+    }
+    &-2 {
+      margin-top: -10rem;
+      margin-left: -30rem;
+    }
+  }
+  &__distance {
+    position: relative;
+    &__p {
+      position: absolute;
+      left: 9.5rem;
+      top: 4.3rem;
+    }
+  }
+}
